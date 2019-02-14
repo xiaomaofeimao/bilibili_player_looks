@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         bilibili player looks
 // @namespace    https://space.bilibili.com/4298216/
-// @version      0.1
+// @version      1.0
 // @description  修改哔哩哔哩播放器外观
 // @author       konekohineko
 // @match        *://*.bilibili.com/*
@@ -22,23 +22,11 @@
     re=/\/(video|bangumi)\/\S+/g;
     re.compile(re);
     path2=path.replace(re,"");
-    if(!path2){act();}
-
-    function act()
-    {var n=0;
-     var sint=setInterval(function(){
-         if(document.getElementsByClassName('bui-body')[0]!=null){
-             if(document.getElementsByClassName('bilibili-player-video-danmaku-switch')[0].style.display=="none"){clearInterval(sint);}
-             else{
-                 main();
-                 if(document.getElementById("reco_list")){document.getElementById("reco_list").onclick=act;}
-                 if(document.getElementsByTagName("video")&&document.getElementsByClassName("bilibili-player-video-wrap")){document.getElementsByTagName("video")[0].onended=function(){document.getElementsByClassName("bilibili-player-video-wrap")[0].onclick=act;act;};}
-                 if(document.getElementsByClassName("bilibili-player-iconfont-next")){document.getElementsByClassName("bilibili-player-iconfont-next")[0].onclick=act;}
-                 if(document.getElementsByClassName("cur-list")){document.getElementsByClassName("cur-list")[0].onclick=act;}
-                 window.onpopstate=act;
-                 clearInterval(sint);}}
-         else{if(n==10){
-             clearInterval(sint);}else{n++;}}},500);}
+    if(!path2){
+        setInterval(function(){
+            //if(document.getElementById("bilibiliPlayer") && !document.getElementById("switchon")){
+            if(document.getElementsByClassName("bilibili-player-video-danmaku-switch").length && !document.getElementById("switchon")){
+                main();}},1000);}
 
     function main()
     {
