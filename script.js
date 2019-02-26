@@ -10,7 +10,7 @@
 
 (function() {
     'use strict';
-	//live page
+    //live page
     var path=window.location.pathname;
     var re=/\/\d+/g;re.compile(re);
     var path2=path.replace(re,"");
@@ -18,17 +18,17 @@
     {document.getElementById('link-navbar-vm').style.position = 'absolute';//fix top bar
      document.getElementById('my-dear-haruna-vm').hidden="true";//hide live pet
      document.getElementsByClassName('bilibili-live-player-video-logo')[0].hidden="true";//hide live logo
-	};
+    };
 
-	 
-	//video page
+     
+    //video page
     //re=/\/video\/av\d+\/?/g;
     re=/\/(video|bangumi)\/\S+/g;
     re.compile(re);
     path2=path.replace(re,"");
     if(!path2){
         setInterval(function(){
-			//if page can changed and havn't changed, try change per 1s
+            //if page can changed and havn't changed, try change per 1s
             //if(document.getElementById("bilibiliPlayer") && !document.getElementById("switchon")){
             if(document.getElementsByClassName("bilibili-player-video-danmaku-switch").length && !document.getElementById("switchon")){
                 main();}},1000);}
