@@ -33,8 +33,7 @@
             if(document.getElementsByClassName("bilibili-player-video-danmaku-switch").length && !document.getElementById("switchon")){
                 main();}},1000);}
 
-    function main()
-    {
+    function main(){
         document.getElementsByClassName('bilibili-player-video-top-issue')[0].hidden="true";
         document.getElementsByClassName('bilibili-player-video-top-follow')[0].hidden="true";
         document.getElementsByClassName('bilibili-player-video-state-play')[0].firstElementChild.hidden="true";
