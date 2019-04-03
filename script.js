@@ -54,7 +54,7 @@
             oldSwitch.parentNode.insertBefore(newSwitch,oldSwitch);}
 
         function new_switch(){
-            document.getElementsByClassName("bui-checkbox")[0].click();
+            document.getElementsByClassName("bilibili-player-video-danmaku-switch")[0].children[0].click();
             if(document.getElementById("switchon").style.display!="none"){
                 document.getElementById("switchon").style.display="none";
                 document.getElementById("switchoff").style.display="inline";}
