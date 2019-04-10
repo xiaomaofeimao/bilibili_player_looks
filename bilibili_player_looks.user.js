@@ -1,4 +1,4 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name         bilibili player looks
 // @namespace    https://space.bilibili.com/4298216/
 // @version      1.0
@@ -18,6 +18,8 @@
     {document.getElementById('link-navbar-vm').style.position = 'absolute';//fix top bar
      document.getElementById('my-dear-haruna-vm').hidden="true";//hide live pet
      document.getElementsByClassName('bilibili-live-player-video-logo')[0].hidden="true";//hide live logo
+     document.getElementById('chat-history-list').style.height='100%';//hide free gifts
+     document.getElementById('penury-gift-msg').style.height='0';//hide free gifts
     };
 
      
