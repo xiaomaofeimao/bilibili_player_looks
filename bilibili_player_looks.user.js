@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name         bilibili player looks
 // @namespace    https://space.bilibili.com/4298216/
-// @version      1.0
+// @version      1.1
 // @description  修改哔哩哔哩播放器外观
 // @author       konekohineko
 // @match        *://*.bilibili.com/*
@@ -36,9 +36,9 @@
                 main();}},1000);}
 
     function main(){
-        document.getElementsByClassName('bilibili-player-video-top-issue')[0].hidden="true";
-        document.getElementsByClassName('bilibili-player-video-top-follow')[0].hidden="true";
-        document.getElementsByClassName('bilibili-player-video-state-play')[0].firstElementChild.hidden="true";
+        document.getElementsByClassName('bilibili-player-video-top-issue')[0].remove();
+        document.getElementsByClassName('bilibili-player-video-top-follow')[0].remove();
+        document.getElementsByClassName('bilibili-player-video-state-play')[0].remove();
         //document.getElementsByClassName('bilibili-player-video-control-mask')[0].hidden="true";
         document.getElementsByClassName('bui-dot')[0].hidden="true";
         document.getElementsByClassName('bilibili-player-video-btn-send')[0].className="bilibili-player-video-btn-send bui bui-button";
