@@ -11,24 +11,17 @@
 (function() {
     'use strict';
     //live page
-    var path=window.location.pathname;
-    var re=/\/\d+/g;re.compile(re);
-    var path2=path.replace(re,"");
-    if(!path2 && window.location.hostname=="live.bilibili.com")
-    {document.getElementById('link-navbar-vm').style.position = 'absolute';//fix top bar
-     document.getElementById('my-dear-haruna-vm').hidden="true";//hide live pet
-     document.getElementsByClassName('bilibili-live-player-video-logo')[0].hidden="true";//hide live logo
-     document.getElementById('chat-history-list').style.height='100%';//hide free gifts
-     document.getElementById('penury-gift-msg').style.height='0';//hide free gifts
+    if(window.location.hostname=="live.bilibili.com" && /^\/\d+/.test(window.location.pathname)){
+        document.getElementById('link-navbar-vm').style.position = 'absolute';//fix top bar
+        document.getElementById('my-dear-haruna-vm').hidden="true";//hide live pet
+        document.getElementsByClassName('bilibili-live-player-video-logo')[0].hidden="true";//hide live logo
+        document.getElementById('chat-history-list').style.height='100%';//hide free gifts
+        document.getElementById('penury-gift-msg').style.height='0';//hide free gifts
     };
 
      
     //video page
-    //re=/\/video\/av\d+\/?/g;
-    re=/\/(video|bangumi)\/\S+/g;
-    re.compile(re);
-    path2=path.replace(re,"");
-    if(!path2){
+    if(/^\/[video\/av|bangumi\/play\/]/.test(window.location.pathname)){
         setInterval(function(){
             //if page can changed and havn't changed, try change per 1s
             //if(document.getElementById("bilibiliPlayer") && !document.getElementById("switchon")){
