@@ -21,7 +21,7 @@
 
      
     //video page
-    if(/^\/(video\/av|bangumi\/play\/|blackboard\/)/.test(window.location.pathname)){
+    if(/^\/(video\/av|[a-z]+\/play\/|blackboard\/)/.test(window.location.pathname)){
         setInterval(function(){
             //if page can changed and havn't changed, try change per 1s
             //if(document.getElementById("bilibiliPlayer") && !document.getElementById("switchon")){
