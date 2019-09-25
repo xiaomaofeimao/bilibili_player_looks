@@ -21,7 +21,7 @@
         
         var newCSS = document.createElement('style');
         newCSS.type = "text/css";
-        newCSS.innerText = ".title-label{display:none;}";
+        newCSS.innerText = ".title-label,.welcome-msg{display:none;}";
         document.body.append(newCSS);
     };
 
