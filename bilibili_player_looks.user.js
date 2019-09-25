@@ -17,6 +17,8 @@
         document.getElementsByClassName('bilibili-live-player-video-logo')[0].hidden="true";//hide live logo
         document.getElementById('chat-history-list').style.height='100%';//hide free gifts
         document.getElementById('penury-gift-msg').style.height='0';//hide free gifts
+        document.body.append('<style type="text/css">.title-label{display:none;}</style>');
+        if(document.getElementsByClassName('checkin-btn')[0]){document.getElementsByClassName('checkin-btn')[0].click();}
     };
 
      
