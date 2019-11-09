@@ -15,6 +15,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;隐藏2233娘；<br />
 &nbsp;&nbsp;&nbsp;&nbsp;隐藏画面左上的logo；<br />
 &nbsp;&nbsp;&nbsp;&nbsp;隐藏弹幕栏底部的免费礼物栏。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;隐藏头衔。<br />
 
 <p>使用前：</p>
 <img src="http://wx3.sinaimg.cn/mw690/87155711ly1g1yv2nqj71j20ru0h5abr.jpg">
