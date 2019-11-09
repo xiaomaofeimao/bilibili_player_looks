@@ -14,7 +14,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;固定顶栏；<br />
 &nbsp;&nbsp;&nbsp;&nbsp;隐藏2233娘；<br />
 &nbsp;&nbsp;&nbsp;&nbsp;隐藏画面左上的logo；<br />
-&nbsp;&nbsp;&nbsp;&nbsp;隐藏弹幕栏底部的免费礼物栏。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;隐藏弹幕栏底部的免费礼物栏；<br />
 &nbsp;&nbsp;&nbsp;&nbsp;隐藏头衔。<br />
 
 <p>使用前：</p>
