@@ -43,7 +43,7 @@
         document.getElementsByClassName('bilibili-player-video-btn-send')[0].className="bilibili-player-video-btn-send bui bui-button";
         
         document.getElementsByClassName('bilibili-player')[0].style.boxShadow="0 0 0px";
-        document.getElementsByClassName('media-wrapper')[0].style.borderTop = "1px solid #e7e7e7";
+        //document.getElementsByClassName('media-wrapper')[0].style.borderTop = "1px solid #e7e7e7";
 
         document.getElementsByClassName("bilibili-player-video-danmaku-input")[0].onfocus=text_focus;
         document.getElementsByClassName("bilibili-player-video-danmaku-input")[0].onblur=text_blur;
