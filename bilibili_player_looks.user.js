@@ -43,10 +43,14 @@
         document.getElementsByClassName('bilibili-player-video-btn-send')[0].className="bilibili-player-video-btn-send bui bui-button";
 
         document.getElementsByClassName('bilibili-player')[0].style.boxShadow="0 0 0px";
-        var thePlayer = document.getElementById('playerWrap')||document.getElementById('player_module');
-        var newLine = document.createElement('div');
-        newLine.style='height:1px;background-color:#e7e5f9';
-        thePlayer.after(newLine);
+        var theBar = document.getElementsByClassName('video-toolbar')[0];
+        if(theBar){
+            theBar.style.marginTop = '0px';
+            theBar.style.paddingTop = '12px';
+        }else{
+            theBar = document.getElementsByClassName('media-wrapper')[0];
+        }
+        theBar.style.borderTop = '1px solid #e5e9f0';
 
         document.getElementsByClassName("bilibili-player-video-danmaku-input")[0].onfocus=text_focus;
         document.getElementsByClassName("bilibili-player-video-danmaku-input")[0].onblur=text_blur;
