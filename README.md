@@ -1,7 +1,7 @@
 # 简介
 
-自用，暂无开关。
-稍微改进哔哩哔哩视频及直播播放器外观。
+自用，暂无开关。  
+稍微改进哔哩哔哩视频及直播播放器外观。  
 浏览器安装油猴插件后点击[这里](https://github.com/xiaomaofeimao/bilibili_player_looks/raw/master/bilibili_player_looks.user.js)安装脚本。
 
 - 视频播放器
@@ -16,7 +16,7 @@
     - 隐藏弹幕栏底部的免费礼物栏
     - 隐藏头衔
 
-#### 使用前：
+##### 使用前：  
 ![](http://wx3.sinaimg.cn/mw690/87155711ly1g1yv2nqj71j20ru0h5abr.jpg)
-#### 使用后：
+##### 使用后：  
 ![](http://wx1.sinaimg.cn/mw690/87155711ly1g1yv2r4nrnj20rx0h9abr.jpg)
