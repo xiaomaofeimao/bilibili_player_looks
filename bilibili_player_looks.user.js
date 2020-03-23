@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name         bilibili player looks
 // @namespace    https://space.bilibili.com/4298216/
 // @version      1.2
@@ -27,7 +27,7 @@
 
 
     //video page
-    if(/^\/(video\/av|[a-z]+\/play\/|blackboard\/)/.test(window.location.pathname)){
+    if(/\/(video|play|blackboard)\//.test(window.location.pathname)){
         setInterval(function(){
             //if page can changed and havn't changed, try change per 1s
             //if(document.getElementById("bilibiliPlayer") && !document.getElementById("switchon")){
