@@ -13,8 +13,8 @@
     //live page
     if(window.location.hostname=="live.bilibili.com" && /^\/\d+/.test(window.location.pathname)){
         document.getElementById('link-navbar-vm').style.position = 'absolute';//fix top bar
-        document.getElementById('my-dear-haruna-vm').hidden="true";//hide live pet
-        document.getElementsByClassName('bilibili-live-player-video-logo')[0].hidden="true";//hide live logo
+        document.getElementById('my-dear-haruna-vm').remove();//hide live pet
+        document.getElementsByClassName('bilibili-live-player-video-logo')[0].remove();//hide live logo
         document.getElementById('chat-history-list').style.height='100%';//hide free gifts
         document.getElementById('penury-gift-msg').style.height='0';//hide free gifts
         if(document.getElementsByClassName('checkin-btn')[0]){document.getElementsByClassName('checkin-btn')[0].click();}
