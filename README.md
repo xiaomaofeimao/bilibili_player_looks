@@ -2,7 +2,7 @@
 
 自用，暂无开关。  
 稍微改进哔哩哔哩视频及直播播放器外观。  
-浏览器安装油猴插件后点击[这里](https://github.com/xmfm/bilibili_player_looks/raw/master/bilibili_player_looks.user.js)安装脚本。  
+浏览器安装油猴插件后点击[这里](../../raw/master/bilibili_player_looks.user.js)安装脚本。  
 
 - 视频播放器
     - 隐藏画面右上角关注和反馈键
