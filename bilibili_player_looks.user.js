@@ -39,7 +39,7 @@
         document.getElementsByClassName('bilibili-player-video-top-follow')[0].remove();
         document.getElementsByClassName('bilibili-player-video-state-play')[0].remove();
         //document.getElementsByClassName('bilibili-player-video-control-mask')[0].hidden="true";
-        document.getElementsByClassName('bui-dot')[0].hidden="true";
+        //document.getElementsByClassName('bui-dot')[0].hidden="true";
         document.getElementsByClassName('bilibili-player-video-btn-send')[0].className="bilibili-player-video-btn-send bui bui-button";
 
         document.getElementsByClassName('bilibili-player')[0].style.boxShadow="0 0 0px";
