@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         bilibili player looks
 // @namespace    https://space.bilibili.com/4298216/
-// @version      1.2.2
+// @version      1.2.3
 // @description  修改哔哩哔哩播放器外观
 // @author       konekohineko
 // @match        *://*.bilibili.com/*
