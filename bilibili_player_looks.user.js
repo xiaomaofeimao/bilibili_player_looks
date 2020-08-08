@@ -1,7 +1,11 @@
 // ==UserScript==
 // @name         bilibili player looks
 // @namespace    https://space.bilibili.com/4298216/
+<<<<<<< HEAD
 // @version      1.2.3
+=======
+// @version      1.2.1
+>>>>>>> parent of acdff86... Update bilibili_player_looks.user.js
 // @description  修改哔哩哔哩播放器外观
 // @author       konekohineko
 // @match        *://*.bilibili.com/*
