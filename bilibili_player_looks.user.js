@@ -63,6 +63,8 @@
         newSwitch.innerHTML='<span class="bp-svgicon" id="switchon" title="关闭弹幕"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22 22"><path d="M20 6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2H18a2 2 0 0 0 2-2V6zM7 13H5a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zm2-4H5a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2z"></path></svg></span><span class="bp-svgicon" id="switchoff" title="开启弹幕"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path d="M16.5 8c1.289 0 2.49.375 3.5 1.022V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7.022A6.5 6.5 0 0 1 16.5 8zM7 13H5a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zm2-4H5a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2z"></path><path d="M17 13l1.2-1.2c2-2 4 0 2 2l-1.2 1.2l1.2 1.2c2 2 0 4-2 2l-1.2-1.2l-1.2 1.2c-2 2-4 0-2-2l1.2-1.2l-1.2-1.2c-2-2 0-4 2-2l1.2 1.2z"></path></svg></span>';
         if(document.getElementsByClassName('bilibili-player-video-danmaku-switch')[0].style.display=="none"){
             oldSwitch.before(newSwitch);
+            document.getElementsByClassName("bilibili-player-video-danmaku-switch")[0].children[0].click();
+            document.getElementsByClassName("bilibili-player-video-danmaku-switch")[0].children[0].click();
             if(document.getElementsByClassName('choose_danmaku')[0].innerText[0] == "开"){
                 document.getElementById("switchon").style.display="none";
             }else{
