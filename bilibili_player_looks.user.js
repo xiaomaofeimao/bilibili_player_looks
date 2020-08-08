@@ -66,7 +66,7 @@
             //if(document.getElementsByClassName('choose_danmaku')[0].innerText[0] == "开"){
             //    document.getElementById("switchon").style.display="none";
             //}else{
-            //    document.getElementById("switchoff").style.display="none";
+                document.getElementById("switchoff").style.display="none";
             //}
         }
 
